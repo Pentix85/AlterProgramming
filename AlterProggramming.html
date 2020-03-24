@@ -1,0 +1,122 @@
+<meta charset="UTF-8">
+<script>
+
+
+
+// var arr = [];
+// var rounds = 1000000;
+// var zeros = 0;
+// var red = 0;
+// var black = 0;
+// var redMax = 0;
+// var blackMax = 0;
+// var i = 0;
+
+// for (i=0; i<=rounds; i++) {
+// 	arr.push(Math.round(Math.random()*36));
+// }
+
+// alert(arr);
+
+// for (i=0; i<arr.length; i++) {
+// 	if (arr[i]==0) {
+// 		zeros++
+// 	}
+// }
+
+// alert('Частота выпадения зеро: ' + zeros/arr.length*100 + '%');
+
+	// var summa = parseInt(prompt('Введите сумму вклада: '));
+	// var goda = parseInt(prompt('Введите на сколько лет вносится вклад: '));
+	// var proc = parseInt(prompt('Введите процент по вкладу: '));
+
+	// for (n=1; n<=goda; n++) {
+	// 	summa = summa+summa*proc/100;
+	// 	alert('Сумма за ' + n + ' лет, составила: ' + summa);
+	// }
+
+	// alert('Итого: ' + summa);
+
+// alert('Играем в игру, где нужно попасть в мишень, угадав необходимый градус под которым нужно выстрелить!');
+// var g = 0;
+
+// do {
+
+// 	var g = parseInt(prompt('Введите градус, под которым будет пущен снаряд: '));
+
+// 	if (((g>10) && (g<20)) || ((g>70) && (g<80))) {
+// 		alert("Target destroyed!");
+// 	} else if ( isNaN(g)) {
+// 		alert("Specify the degree! Not the letters!");
+// 	} else {
+// 		alert("Miss!");
+// 	}
+// }
+
+// while (prompt("Want restart? Press 1-yes, press 2-no.") !='2') {
+// 	alert('Bye!');
+// }
+
+// ДЗ№2
+// var Otgadki = 0;
+
+// var a = prompt("Загадка №1. Зимой и летом одним цветом. Что это?");
+
+// if (a=="елка" || a=="Елка" || a=='ёлка' || a=='Ёлка') {
+// 	alert('Верно!');
+// 	Otgadki++;
+// } else {
+// 	alert('Неверно!');
+// }
+
+// var a = prompt("Загадка №2. Сижу верхом, не ведаю на ком. Что это?");
+
+// if (a=="шапка" || a=="Шапка") {
+// 	alert('Правильно!');
+// 	Otgadki++;
+// } else {
+// 	alert('Неверно!');
+// }
+
+// var a = prompt("Загадка №3. Висит груша, нельзя скушать. Что это?");
+
+// if (a=="лампочка" || a=="Лампочка") {
+// 	alert('Правильно!');
+// 	Otgadki++;
+// } else {
+// 	alert('Неверно!');
+// }
+
+// alert('Верных отгадок: ' + Otgadki);
+
+
+
+// ДЗ№1
+alert('Calculater')
+
+do {
+	var a = parseInt(prompt('Введите число №1: '));
+	if (isNaN(a)) {
+		alert('Enter a number! Not letter!');
+	}
+	var b = parseInt(prompt('Введите число №2: '));
+	if (isNaN(b)) {
+		alert('Enter a number! Not letter!');
+	}
+	var c = prompt('Выбирите действие: 1-сложение, 2-вычитание, 3-умножение, 4-деление');
+
+	if (c == "1") {
+		alert(a+b);
+	} else if (c == "2") {
+		alert(a-b);
+	} else if (c == "3") {
+		alert(a*b);
+	} else if (c == "4") {
+		alert(a/b);
+	} else if (isNaN(c)) {
+		alert('Enter a number! Not letter!');
+	}
+
+} while (prompt('Enter 1-repeat or C-off') != "c");
+
+// </script>
